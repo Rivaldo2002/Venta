@@ -81,27 +81,27 @@ erDiagram
 
 cd backend
 
-# Install dependensi PHP
+## Install dependensi PHP
 
 composer install
 
-# Copy konfigurasi environment
+## Copy konfigurasi environment
 
 cp .env.example .env
 
-# Generate Application Key
+## Generate Application Key
 
 php artisan key:generate
 
-# Buka file .env dan sesuaikan konfigurasi database
+## Buka file .env dan sesuaikan konfigurasi database
 
-# Pastikan MySQL sudah menyala dan database kosong sudah dibuat (contoh nama db: venta_pos)
+## Pastikan MySQL sudah menyala dan database kosong sudah dibuat (contoh nama db: venta_pos)
 
-# Jalankan migrasi dan masukkan data dummy (produk & akun default)
+## Jalankan migrasi dan masukkan data dummy (produk & akun default)
 
 php artisan migrate:fresh --seed
 
-# Nyalakan server backend (otomatis berjalan di http://127.0.0.1:8000)
+## Nyalakan server backend (otomatis berjalan di http://127.0.0.1:8000)
 
 php artisan serve
 
@@ -109,10 +109,10 @@ php artisan serve
 
 cd frontend
 
-# Install dependensi Node.js (React, Tailwind, dll)
+## Install dependensi Node.js (React, Tailwind, dll)
 
 npm install
 
-# Nyalakan server frontend (otomatis berjalan di http://localhost:5173)
+## Nyalakan server frontend (otomatis berjalan di http://localhost:5173)
 
 npm run dev
